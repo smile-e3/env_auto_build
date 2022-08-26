@@ -5,10 +5,10 @@ sudo apt install xfce4 -y
 
 # == 安装主题以及ICONS ==
 tar -xf theme_icons/Dracula.tar.xz
-sudo mv theme_icons/Dracula /usr/share/themes
+sudo mv Dracula/ /usr/share/themes
 tar -xf theme_icons/BigSur.tar.xz
-sudo mv theme_icons/BigSur /usr/share/icons
-sudo mv theme_icons/BigSur-dark /usr/share/icons
+sudo mv BigSur/ /usr/share/icons
+sudo mv BigSur-dark/ /usr/share/icons
 
 # == 安装hack ttf字体 ==
 sudo apt-get -y install fonts-hack-ttf
