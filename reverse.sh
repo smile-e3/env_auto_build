@@ -23,6 +23,7 @@ mv $tool_path/ghidra_10.1.4_PUBLIC $tool_path/ghidra
 rm ghidra_10.1.4_PUBLIC_20220519.zip
 
 # Ghidra插件下载
+echo -e "\033[32m[INFO]正在安装Ghidra插件\033[0m"
 mkdir $tool_path/ghidra_plugins
 git clone https://github.com/tacnetsol/ghidra_scripts.git $tool_path/ghidra_plugins
 
