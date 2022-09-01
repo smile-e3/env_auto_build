@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source $HOME/env_auto_build/base_lib/base.sh
+source $HOME/env_auto_build/lib/base.sh
 
 function vm_tools {
     # 安装vm-tools工具
@@ -18,7 +18,7 @@ function base_tools {
 
 function v2_proxy {
     echo -e "$GREEN[INFO]正在克隆auto-v2ray项目$END"
-    git clone https://github.91chi.fun/https://github.com/smile-e3/auto-v2ray.git -o $tool_path/auto-v2ray
+    git clone https://github.91chi.fun/https://github.com/smile-e3/auto-v2ray.git $tool_path/auto-v2ray
     chmod +x $tool_path/auto-v2ray/v2ray-core/v2ray_core_install.sh
     echo -e "$GREEN[INFO]正在安装v2ray-core$END"
     sudo $tool_path/auto-v2ray/v2ray-core/./v2ray_core_install.sh # 需要使用root权限安装
